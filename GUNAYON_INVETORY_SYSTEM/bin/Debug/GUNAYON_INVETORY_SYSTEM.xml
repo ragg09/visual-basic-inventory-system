@@ -1,0 +1,48 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+GUNAYON_INVETORY_SYSTEM
+</name>
+</assembly>
+<members>
+<member name="P:GUNAYON_INVETORY_SYSTEM.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:GUNAYON_INVETORY_SYSTEM.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="P:GUNAYON_INVETORY_SYSTEM.My.Resources.Resources.button_home">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:GUNAYON_INVETORY_SYSTEM.My.Resources.Resources.LOGO">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:GUNAYON_INVETORY_SYSTEM.My.Resources.Resources.LOGO_resized2">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:GUNAYON_INVETORY_SYSTEM.My.Resources.Resources.manager">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:GUNAYON_INVETORY_SYSTEM.My.Resources.Resources.manager1">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:GUNAYON_INVETORY_SYSTEM.My.Resources.Resources.vendor_icon">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="T:GUNAYON_INVETORY_SYSTEM.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>

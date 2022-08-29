@@ -1,0 +1,390 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6F6D0EED-CE58-4A52-90F1-E15EC8C48B7D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>GUNAYON_INVETORY_SYSTEM.My.MyApplication</StartupObject>
+    <RootNamespace>GUNAYON_INVETORY_SYSTEM</RootNamespace>
+    <AssemblyName>GUNAYON_INVETORY_SYSTEM</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>GUNAYON_INVETORY_SYSTEM.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>GUNAYON_INVETORY_SYSTEM.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.6.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOGIN\login_manager.Designer.vb">
+      <DependentUpon>login_manager.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LOGIN\login_manager.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOGIN\login_storekeeper.Designer.vb">
+      <DependentUpon>login_storekeeper.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LOGIN\login_storekeeper.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MANAGER\ITEM\display_all.Designer.vb">
+      <DependentUpon>display_all.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MANAGER\ITEM\display_all.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MANAGER\ITEM\item_insert.Designer.vb">
+      <DependentUpon>item_insert.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MANAGER\ITEM\item_insert.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MANAGER\ITEM\item_order.Designer.vb">
+      <DependentUpon>item_order.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MANAGER\ITEM\item_order.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MANAGER\ITEM\item_update.Designer.vb">
+      <DependentUpon>item_update.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MANAGER\ITEM\item_update.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MANAGER\manager_main.Designer.vb">
+      <DependentUpon>manager_main.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MANAGER\manager_main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MANAGER\OPTIONS\ACCOUNT_SETTINGS\manager_settings.Designer.vb">
+      <DependentUpon>manager_settings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MANAGER\OPTIONS\ACCOUNT_SETTINGS\manager_settings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MANAGER\OPTIONS\ACCOUNT_SETTINGS\STOREKEEPER\sk_create.Designer.vb">
+      <DependentUpon>sk_create.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MANAGER\OPTIONS\ACCOUNT_SETTINGS\STOREKEEPER\sk_create.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MANAGER\OPTIONS\ACCOUNT_SETTINGS\STOREKEEPER\sk_delete.Designer.vb">
+      <DependentUpon>sk_delete.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MANAGER\OPTIONS\ACCOUNT_SETTINGS\STOREKEEPER\sk_delete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MANAGER\OPTIONS\ACCOUNT_SETTINGS\STOREKEEPER\sk_update.Designer.vb">
+      <DependentUpon>sk_update.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MANAGER\OPTIONS\ACCOUNT_SETTINGS\STOREKEEPER\sk_update.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MANAGER\REPORT\daily_expense.Designer.vb">
+      <DependentUpon>daily_expense.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MANAGER\REPORT\daily_expense.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MANAGER\REPORT\daily_revenue.Designer.vb">
+      <DependentUpon>daily_revenue.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MANAGER\REPORT\daily_revenue.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MANAGER\REPORT\manager_supplier_transaction.Designer.vb">
+      <DependentUpon>manager_supplier_transaction.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MANAGER\REPORT\manager_supplier_transaction.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MANAGER\REPORT\other_transactions.Designer.vb">
+      <DependentUpon>other_transactions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MANAGER\REPORT\other_transactions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MANAGER\REPORT\rev_exp.Designer.vb">
+      <DependentUpon>rev_exp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MANAGER\REPORT\rev_exp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MANAGER\REPORT\transaction_between_customer.Designer.vb">
+      <DependentUpon>transaction_between_customer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MANAGER\REPORT\transaction_between_customer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MANAGER\SUPPLIER\sup_create.Designer.vb">
+      <DependentUpon>sup_create.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MANAGER\SUPPLIER\sup_create.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MANAGER\SUPPLIER\sup_update.Designer.vb">
+      <DependentUpon>sup_update.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MANAGER\SUPPLIER\sup_update.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="STOREKEEPER\item_to_be_use.Designer.vb">
+      <DependentUpon>item_to_be_use.vb</DependentUpon>
+    </Compile>
+    <Compile Include="STOREKEEPER\item_to_be_use.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="STOREKEEPER\ORDER\order_station.Designer.vb">
+      <DependentUpon>order_station.vb</DependentUpon>
+    </Compile>
+    <Compile Include="STOREKEEPER\ORDER\order_station.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="STOREKEEPER\PRODUCT\hamburger.Designer.vb">
+      <DependentUpon>hamburger.vb</DependentUpon>
+    </Compile>
+    <Compile Include="STOREKEEPER\PRODUCT\hamburger.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="STOREKEEPER\PRODUCT\hotdog_bun.Designer.vb">
+      <DependentUpon>hotdog_bun.vb</DependentUpon>
+    </Compile>
+    <Compile Include="STOREKEEPER\PRODUCT\hotdog_bun.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="STOREKEEPER\PRODUCT\items_to_be_sold.Designer.vb">
+      <DependentUpon>items_to_be_sold.vb</DependentUpon>
+    </Compile>
+    <Compile Include="STOREKEEPER\PRODUCT\items_to_be_sold.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="STOREKEEPER\PRODUCT\palamig.Designer.vb">
+      <DependentUpon>palamig.vb</DependentUpon>
+    </Compile>
+    <Compile Include="STOREKEEPER\PRODUCT\palamig.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="STOREKEEPER\PRODUCT\pancake.Designer.vb">
+      <DependentUpon>pancake.vb</DependentUpon>
+    </Compile>
+    <Compile Include="STOREKEEPER\PRODUCT\pancake.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="STOREKEEPER\storekeeper_main.Designer.vb">
+      <DependentUpon>storekeeper_main.vb</DependentUpon>
+    </Compile>
+    <Compile Include="STOREKEEPER\storekeeper_main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LOGIN\login_manager.resx">
+      <DependentUpon>login_manager.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LOGIN\login_storekeeper.resx">
+      <DependentUpon>login_storekeeper.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MANAGER\ITEM\display_all.resx">
+      <DependentUpon>display_all.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MANAGER\ITEM\item_insert.resx">
+      <DependentUpon>item_insert.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MANAGER\ITEM\item_order.resx">
+      <DependentUpon>item_order.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MANAGER\ITEM\item_update.resx">
+      <DependentUpon>item_update.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MANAGER\manager_main.resx">
+      <DependentUpon>manager_main.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MANAGER\OPTIONS\ACCOUNT_SETTINGS\manager_settings.resx">
+      <DependentUpon>manager_settings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MANAGER\OPTIONS\ACCOUNT_SETTINGS\STOREKEEPER\sk_create.resx">
+      <DependentUpon>sk_create.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MANAGER\OPTIONS\ACCOUNT_SETTINGS\STOREKEEPER\sk_delete.resx">
+      <DependentUpon>sk_delete.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MANAGER\OPTIONS\ACCOUNT_SETTINGS\STOREKEEPER\sk_update.resx">
+      <DependentUpon>sk_update.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MANAGER\REPORT\daily_expense.resx">
+      <DependentUpon>daily_expense.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MANAGER\REPORT\daily_revenue.resx">
+      <DependentUpon>daily_revenue.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MANAGER\REPORT\manager_supplier_transaction.resx">
+      <DependentUpon>manager_supplier_transaction.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MANAGER\REPORT\other_transactions.resx">
+      <DependentUpon>other_transactions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MANAGER\REPORT\rev_exp.resx">
+      <DependentUpon>rev_exp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MANAGER\REPORT\transaction_between_customer.resx">
+      <DependentUpon>transaction_between_customer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MANAGER\SUPPLIER\sup_create.resx">
+      <DependentUpon>sup_create.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MANAGER\SUPPLIER\sup_update.resx">
+      <DependentUpon>sup_update.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="STOREKEEPER\item_to_be_use.resx">
+      <DependentUpon>item_to_be_use.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="STOREKEEPER\ORDER\order_station.resx">
+      <DependentUpon>order_station.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="STOREKEEPER\PRODUCT\hamburger.resx">
+      <DependentUpon>hamburger.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="STOREKEEPER\PRODUCT\hotdog_bun.resx">
+      <DependentUpon>hotdog_bun.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="STOREKEEPER\PRODUCT\items_to_be_sold.resx">
+      <DependentUpon>items_to_be_sold.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="STOREKEEPER\PRODUCT\palamig.resx">
+      <DependentUpon>palamig.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="STOREKEEPER\PRODUCT\pancake.resx">
+      <DependentUpon>pancake.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="STOREKEEPER\storekeeper_main.resx">
+      <DependentUpon>storekeeper_main.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGO_resized2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vendor_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\manager.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
